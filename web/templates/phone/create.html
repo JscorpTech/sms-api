@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+
+{% block content %}
+
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="create-phone d-flex flex-column justify-content-center">
+                    <form action="" class="sms-form form" method="post">{% csrf_token %}
+                        {#                        {% for message in messages %}#}
+                        {#                            <div class="alert alert-danger">#}
+                        {#                                {{ message }}#}
+                        {#                            </div>#}
+                        {#                        {% endfor %}#}
+                        <label for="phone-mask">Telefon nomeringizni kiriting</label><input type="text" name="phone"
+                                                                                            required
+                                                                                            class="form-control"
+                                                                                            id="phone-mask"
+                                                                                            placeholder="+998 (94) 000-00-00"
+                        >
+                        <div class="card-footer d-flex justify-content-end me-3">
+                            <input type="submit" value="Yuborish" class="btn btn-outline-success mt-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
+
+{% block footer %}
+
+    <script>
+        IMask(
+            document.getElementById('phone-mask'), {
+                mask: '+{998} (00) 000-00-00'
+            });
+    </script>
+{% endblock %}

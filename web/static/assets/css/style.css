@@ -1,0 +1,18 @@
+.create-phone {
+    max-width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 62px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.sms-form {
+    margin-top: -50px;
+}
+.copy-th svg{
+    margin-left: 20px;
+}
+.copy-th svg:active{
+    opacity: .5;
+    color: greenyellow;
+}

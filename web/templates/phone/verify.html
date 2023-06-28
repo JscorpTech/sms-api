@@ -1,0 +1,36 @@
+{% extends "layouts/main.html" %}
+
+
+{% block content %}
+
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="create-phone d-flex flex-column justify-content-center">
+                    <form action="" class="sms-form form" method="post">{% csrf_token %}
+
+                        <label for="phone-mask">Tasdiqlash ko'dini kiriting</label><input type="text" name="otp"
+                                                                                          required
+                                                                                          class="form-control"
+                                                                                          id="otp-mask"
+                                                                                          placeholder="0-0-0-0-0-0"
+                        >
+                        <div class="card-footer d-flex justify-content-end me-3">
+                            <input type="submit" value="Tasdiqlash" class="btn btn-outline-success mt-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block footer %}
+    <script>
+        IMask(
+            document.getElementById('otp-mask'), {
+                mask: '0-0-0-0-0-0'
+            });
+    </script>
+{% endblock footer %}

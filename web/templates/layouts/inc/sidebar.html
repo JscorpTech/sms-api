@@ -1,0 +1,63 @@
+{% load static %}
+
+
+<header id="page-topbar">
+    <div class="navbar-header">
+        <div class="d-flex">
+
+            <button type="button" class="btn btn-sm px-3 font-size-16 header-item vertical-menu-btn">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+<!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
+
+    <!-- LOGO -->
+    <div class="navbar-brand-box">
+        <a href="index-2.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                                                   <h4 class="mt-3">SMS</h4>
+
+                    </span>
+            <span class="logo-lg">
+                                                      <h2 class="mt-3">SMS Service</h2>
+
+                        </span>
+        </a>
+
+        <a href="index-2.html" class="logo logo-light">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-light.png" alt="" height="22">
+                    </span>
+            <span class="logo-sm">
+                        <img src="assets/images/logo-sm-light.png" alt="" height="22">
+                    </span>
+        </a>
+    </div>
+
+    <button type="button" class="btn btn-sm px-3 font-size-16 header-item vertical-menu-btn">
+        <i class="fa fa-fw fa-bars"></i>
+    </button>
+
+    <div data-simplebar class="sidebar-menu-scroll">
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="mb-3">
+                    <a href="{% url "phone:list" %}">
+                        <i class="fs-3 me-2 fas fa-phone-alt"></i>
+                        <span class="menu-item" data-key="t-sales">Telefon nomerlar</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->
