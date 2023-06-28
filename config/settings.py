@@ -27,9 +27,9 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://sms.iprogrammer.uz/",
-    "https://194.187.122.140:1114/",
-    "http://127.0.0.1:8000/"
+    "https://sms.iprogrammer.uz",
+    "https://194.187.122.140:1114",
+    "http://127.0.0.1:8000"
 ]
 
 # Application definition
