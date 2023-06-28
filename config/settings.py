@@ -25,8 +25,10 @@ SECRET_KEY = 'django-insecure-#w(&#7-0wad%(#g8^zvgf3l#83!d@l*2foy^_jnkc@!r7-u3*6
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+
 CSRF_TRUSTED_ORIGINS = [
     "https://sms.iprogrammer.uz/",
+    "https://194.187.122.140:1114/",
     "http://127.0.0.1:8000/"
 ]
 
@@ -130,5 +132,5 @@ MEDIA_ROOT = BASE_DIR.joinpath("web/media")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "accounts.User"
-LOGIN_REDIRECT_URL = "adm:home"
+LOGIN_REDIRECT_URL = "phone:list"
 LOGOUT_REDIRECT_URL = "login"
